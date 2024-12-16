@@ -186,81 +186,91 @@ document.getElementById('btn_tokenA').addEventListener('click', tokenA);
 document.getElementById('btn_tokenB').addEventListener('click', tokenB);
 
 async function sendLiquidity() {
-    if(document.getElementById('btn_sendLiquidity').value!==''){
-        alert('Boton enviar liquidacion presionado!')
+    if(document.getElementById('addliquidity').value!==''){
+        alert(`Boton enviar liquidacion presionado!\nValor: ${document.getElementById('addliquidity').value}`)
         console.log('Boton enviar liquidacion presionado!')
+        console.log('Valor: ', document.getElementById('addliquidity').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function removeLiquidity() {
-    if(document.getElementById('btn_removeLiquidity').value!==''){
-        alert('Boton remover liquidacion presionado!')
+    if(document.getElementById('removeliquidity').value!==''){
+        alert(`Boton remover liquidacion presionado!\nValor: ${document.getElementById('removeliquidity').value}`)
         console.log('Boton remover liquidacion presionado!')
+        console.log('Valor: ', document.getElementById('removeliquidity').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function swapAB() {
-    if(document.getElementById('btn_swapA_B').value!==''){
-        alert('Boton intercambiar A hacia B presionado!')
+    if(document.getElementById('swapab').value!==''){
+        alert(`Boton intercambiar A hacia B presionado!\nValor: ${document.getElementById('swapab').value}`)
         console.log('Boton intercambiar A hacia B presionado!')
+        console.log('Valor: ', document.getElementById('swapab').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function swapBA() {
-    if(document.getElementById('btn_swapB_A').value!==''){
-        alert('Boton intercambiar B hacia A presionado!')
+    if(document.getElementById('swapba').value!==''){
+        alert(`Boton intercambiar B hacia A presionado!\nValor: ${document.getElementById('swapba').value}`)
         console.log('Boton intercambiar B hacia A presionado!')
+        console.log('Valor: ', document.getElementById('swapba').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function getPrice() {
-    if(document.getElementById('btn_getPrice').value!==''){
-        alert('Boton obtener precio presionado!')
+    if(document.getElementById('price').value!==''){
+        alert(`Boton obtener precio presionado!\nValor: ${document.getElementById('price').value}`)
         console.log('Boton obtener precio presionado!')
+        console.log('Valor: ', document.getElementById('price').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function getOwner() {
-    if(document.getElementById('btn_owner').value!==''){
-        alert('Boton obtener dueño presionado!')
+    if(document.getElementById('theowner').value!==''){
+        alert(`Boton obtener dueño presionado!\nValor: ${document.getElementById('theowner').value}`)
         console.log('Boton obtener dueño presionado!')
+        console.log('Valor: ', document.getElementById('theowner').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function reserveA() {
-    if(document.getElementById('btn_reserveA').value!==''){
-        alert('Boton reservar A presionado!')
+    if(document.getElementById('thereserveA').value!==''){
+        alert(`Boton reservar A presionado!\nValor: ${document.getElementById('thereserveA').value}`)
         console.log('Boton reservar A presionado!')
+        console.log('Valor: ', document.getElementById('thereserveA').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function reserveB() {
-    if(document.getElementById('btn_reserveB').value!==''){
-        alert('Boton reservar B presionado!')
+    if(document.getElementById('thereserveB').value!==''){
+        alert(`Boton reservar B presionado!\nValor: ${document.getElementById('thereserveB').value}`)
         console.log('Boton reservar B presionado!')
+        console.log('Valor: ', document.getElementById('thereserveB').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function tokenA() {
-    if(document.getElementById('btn_tokenA').value!==''){
-        alert('Boton token A presionado!')
+    if(document.getElementById('thetokenA').value!==''){
+        alert(`Boton token A presionado!\nValor: ${document.getElementById('thetokenA').value}`)
         console.log('Boton token A presionado!')
+        console.log('Valor: ', document.getElementById('thetokenA').value)
     } else {
         alert('El campo no puede estar vacio')
     }
 }
 async function tokenB() {
-    if(document.getElementById('btn_tokenB').value!==''){
-        alert('Boton token B presionado!')
+    if(document.getElementById('thetokenB').value!==''){
+        alert(`Boton token B presionado!\nValor: ${document.getElementById('thetokenB').value}`)
         console.log('Boton token B presionado!')
+        console.log('Valor: ', document.getElementById('thetokenB').value)
     } else {
         alert('El campo no puede estar vacio')
     }
