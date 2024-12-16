@@ -57,6 +57,17 @@ async function connectWallet() {
         document.getElementById('ethBalance').style.display = 'block';
         document.getElementById('sendERC20Fields').style.display = 'block';
         document.getElementById('sendETHFields').style.display = 'block';
+        document.getElementById('add_liquidity').style.display = 'block';
+        document.getElementById('remove_liquidity').style.display = 'block';
+        document.getElementById('swap_a_b').style.display = 'block';
+        document.getElementById('swap_b_a').style.display = 'block';
+        
+        document.getElementById('getPrice').style.display = 'block';
+        document.getElementById('owner').style.display = 'block';
+        document.getElementById('reserveA').style.display = 'block';
+        document.getElementById('reserveB').style.display = 'block';
+        document.getElementById('tokenA').style.display = 'block';
+        document.getElementById('tokenB').style.display = 'block';
 
         document.getElementById('ethBalance').innerText = `Balance de Wallet: ${formattedBalance} ETH`;
     }
@@ -77,6 +88,16 @@ async function disconnectWallet() {
     document.getElementById('sendETHFields').style.display = 'none';
     document.getElementById('erc20Balance').style.display = 'none';
     document.getElementById('ethBalance').style.display = 'none';
+    document.getElementById('add_liquidity').style.display = 'none';
+    document.getElementById('remove_liquidity').style.display = 'none';
+    document.getElementById('swap_a_b').style.display = 'none';
+    document.getElementById('swap_b_a').style.display = 'none';
+    document.getElementById('getPrice').style.display = 'none';
+    document.getElementById('owner').style.display = 'none';
+    document.getElementById('reserveA').style.display = 'none';
+    document.getElementById('reserveB').style.display = 'none';
+    document.getElementById('tokenA').style.display = 'none';
+    document.getElementById('tokenB').style.display = 'none';
 }
 
 async function sendETH() {
@@ -151,3 +172,96 @@ document.getElementById('btnConnect').addEventListener('click', connectWallet);
 document.getElementById('btnDisconnect').addEventListener('click', disconnectWallet);
 document.getElementById('btnSendETH').addEventListener('click', sendETH);
 document.getElementById('btnSendERC20').addEventListener('click', sendToken);
+
+
+document.getElementById('btn_sendLiquidity').addEventListener('click', sendLiquidity);
+document.getElementById('btn_removeLiquidity').addEventListener('click', removeLiquidity);
+document.getElementById('btn_swapA_B').addEventListener('click', swapAB);
+document.getElementById('btn_swapB_A').addEventListener('click', swapBA);
+document.getElementById('btn_getPrice').addEventListener('click', getPrice);
+document.getElementById('btn_owner').addEventListener('click', getOwner);
+document.getElementById('btn_reserveA').addEventListener('click', reserveA);
+document.getElementById('btn_reserveB').addEventListener('click', reserveB);
+document.getElementById('btn_tokenA').addEventListener('click', tokenA);
+document.getElementById('btn_tokenB').addEventListener('click', tokenB);
+
+async function sendLiquidity() {
+    if(document.getElementById('btn_sendLiquidity').value!==''){
+        alert('Boton enviar liquidacion presionado!')
+        console.log('Boton enviar liquidacion presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function removeLiquidity() {
+    if(document.getElementById('btn_removeLiquidity').value!==''){
+        alert('Boton remover liquidacion presionado!')
+        console.log('Boton remover liquidacion presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function swapAB() {
+    if(document.getElementById('btn_swapA_B').value!==''){
+        alert('Boton intercambiar A hacia B presionado!')
+        console.log('Boton intercambiar A hacia B presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function swapBA() {
+    if(document.getElementById('btn_swapB_A').value!==''){
+        alert('Boton intercambiar B hacia A presionado!')
+        console.log('Boton intercambiar B hacia A presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function getPrice() {
+    if(document.getElementById('btn_getPrice').value!==''){
+        alert('Boton obtener precio presionado!')
+        console.log('Boton obtener precio presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function getOwner() {
+    if(document.getElementById('btn_owner').value!==''){
+        alert('Boton obtener dueño presionado!')
+        console.log('Boton obtener dueño presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function reserveA() {
+    if(document.getElementById('btn_reserveA').value!==''){
+        alert('Boton reservar A presionado!')
+        console.log('Boton reservar A presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function reserveB() {
+    if(document.getElementById('btn_reserveB').value!==''){
+        alert('Boton reservar B presionado!')
+        console.log('Boton reservar B presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function tokenA() {
+    if(document.getElementById('btn_tokenA').value!==''){
+        alert('Boton token A presionado!')
+        console.log('Boton token A presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
+async function tokenB() {
+    if(document.getElementById('btn_tokenB').value!==''){
+        alert('Boton token B presionado!')
+        console.log('Boton token B presionado!')
+    } else {
+        alert('El campo no puede estar vacio')
+    }
+}
